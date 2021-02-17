@@ -7,8 +7,8 @@ import Work_samples from "./component/page/work_samples"
 import Footer from "./component/footer";
 import {Redirect, Switch, Route} from 'react-router-dom';
 import error_page from "./component/page/error_page";
-import './style/App.css';
-import './style/bootstrap.min.css';
+import './style/App.scss';
+
 
 export default function App() {
 
