@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Nav from "./component/Nav";
+import Home from "./component/page/Home";
+import About from "./component/page/About";
+import Buy from "./component/page/Buy"
+import Work_samples from "./component/page/work_samples"
+import Footer from "./component/footer";
+import {Redirect, Switch, Route} from 'react-router-dom';
+import error_page from "./component/page/error_page";
+import './style/App.css';
+import './style/bootstrap.min.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+
+    const home = () => (
+        <div>
+            {Home}
+        </div>
+    );
+        return (
+        <Route>
+            <div className="h-container bg-container IRANSansWeb">
+                <Nav/>
+                <Switch>
+                    <Route path='/' exact component={Home}/>
+                    <Route path='/home' exact component={Home}/>
+                    <Route path='/about' exact component={About}/>
+                    <Route path='/Buy' exact component={Buy}/>
+                    <Route path='/Work_samples' exact component={Work_samples}/>
+                    <Route   component={error_page} />
+                </Switch>
+                <Footer/>
+            </div>
+        </Route>
+    )
 }
-
-export default App;
