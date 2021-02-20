@@ -1,4 +1,8 @@
+@import "font-size/font_size.scss";
+@import "media-rezolation/media_rezolation.scss";
+
 /*****************************************    font      ***************************************/
+
 @font-face {
   font-family: AdobeGothicStd;
   src: url("../font/AdobeGothicStd-Bold.otf")
@@ -20,17 +24,12 @@
   font-family: IRANSansWeb, serif;
 }
 
+
 /*!*****************************************    height      ***************************************!*/
 .h-container{
   height: 100%;
 }
-/*.h-navbar{*/
-/*    height: 3vw;*/
 
-/*}*/
-/*.h-slider{*/
-/*    height: 45vw;*/
-/*}*/
 /*****************************************    width      ***************************************/
 /*****************************************    back , color      ***************************************/
 .bg-container{
@@ -186,6 +185,9 @@
   .h-service {
     height: calc(11vw + 11em);
   }
+  .h-about {
+    height: calc(30vw + 30em);
+  }
   /*****************************************    width      ***************************************/
   .w-nav {
     width: calc(10vw + 12em);
@@ -208,6 +210,10 @@
     border-radius: calc(0.5vw + 0.4em);
     margin-right: calc(1vw + 1em);
     margin-left: calc(1vw + 1em);
+  }
+  .w-about{
+    width: 100%;
+    text-align: center;
   }
   /*****************************************    bg     ***************************************/
   .img1_slider, .img2_slider, .img3_slider {
@@ -233,12 +239,22 @@
   .fs-t-items-home{
     font-size: calc( 1vw + 0.9em);
   }
+  .fs_T_about{
+    font-size: calc( 1vw + 0.9em);
+    text-align: center;
+  }
+  .fs-about{
+    font-size: calc( 0.6vw + 0.6em);
+    text-align: center;
+
+  }
   .fs-service-text{
     font-size: calc( 0.5vw + 0.6em);
   }
   .fs-footer{
     font-size: calc(0.5vw + 0.5em);
   }
+
   /*****************************************    align justify      ***************************************/
   .justify-home{
     justify-content: center;
@@ -269,13 +285,9 @@
 }
 
 @media only screen and (max-width: 766px) and (min-width: 450px) {
-  /*.bg-container{*/
-  /*    background-color: purple	;*/
-  /*}*/
+
   /*****************************************    height      ***************************************/
-  /*.h-container{*/
-  /*    height: calc(50vw + 50em);*/
-  /*}*/
+
   .h-navbar {
     height: 7vw;
   }
@@ -310,6 +322,9 @@
   .w-item-footer{
     width: calc(4vw + 4em);
   }
+  .w-about{
+    width: 60%;
+  }
   /*****************************************    height      ***************************************/
   .items_home {
     width: 26%;
@@ -318,7 +333,9 @@
     margin-left: calc(0.6vw + 0.2em);
   }
 
-
+  .h-about {
+    height: calc(30vw + 30em);
+  }
 
   /*****************************************    bg     ***************************************/
   .img1_slider, .img2_slider, .img3_slider {
@@ -342,6 +359,13 @@
   }
   .fs-t-items-home{
     font-size: calc( 1vw + 0.9em);
+  }
+  .fs_T_about{
+    font-size: calc( 1vw + 0.9em);
+  }
+  .fs-about{
+    font-size: calc( 0.6vw + 0.6em);
+
   }
   .fs-service-text{
     font-size: calc( 0.8vw + 0.7em);
@@ -401,6 +425,9 @@
     margin-right: calc(0.6vw + 0.2em);
     margin-left: calc(0.6vw + 0.2em);
   }
+  .h-about {
+    height: calc(30vw + 30em);
+  }
   /*****************************************    bg      ***************************************/
 
   .img1_slider, .img2_slider, .img3_slider {
@@ -430,6 +457,9 @@
   }
   .w-item-footer{
     width: calc(5vw + 5em);
+  }
+  .w-about{
+    width: 60%;
   }
   /*****************************************    font-size      ***************************************/
   .fs-t-items-home{
@@ -486,7 +516,9 @@
   .h-service {
     height: calc(22vw + 21em);
   }
-
+  .h-about {
+    height: calc(20vw + 20em);
+  }
 
   /*****************************************    width      ***************************************/
   .w-nav{
@@ -503,6 +535,9 @@
   }
   .w-item-footer{
     width: calc(5vw + 5em);
+  }
+  .w-about{
+    width: 45%;
   }
   /*****************************************    bg     ***************************************/
   .error-bg{
@@ -521,6 +556,13 @@
   /*****************************************    font-size      ***************************************/
   .fs-t-items-home{
     font-size: calc( 1vw + 0.9em);
+  }
+  .fs_T_about{
+    font-size: calc( 1vw + 0.9em);
+  }
+  .fs-about{
+    font-size: calc( 0.6vw + 0.6em);
+
   }
   .fs-service-text{
     font-size: calc( 0.8vw + 0.7em);
@@ -589,6 +631,9 @@
     margin-right: calc(3vw + 2em);
     margin-left: calc(3vw + 2em);
   }
+  .h-about {
+    height: calc(30vw + 30em);
+  }
   /*****************************************    bg      ***************************************/
 
   .img1_slider, .img2_slider, .img3_slider {
@@ -610,9 +655,19 @@
   .w-item-footer{
     width: calc(7vw + 7em);
   }
+  .w-about{
+    width: 50%;
+  }
   /*****************************************    font-size      ***************************************/
   .fs-t-items-home{
     font-size: calc( 1.5vw + 1em);
+  }
+  .fs_T_about{
+    font-size: calc( 1.5vw + 1em);
+  }
+  .fs-about{
+    font-size: calc( 0.8vw + 0.8em);
+
   }
   .fs-service-text{
     font-size: calc( 0.8vw + 0.7em);

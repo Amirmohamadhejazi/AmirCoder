@@ -3,12 +3,9 @@ import Slider from "../Slider";
 import {Link} from "react-router-dom";
 
 export default function Home() {
-    // const [state, setstate] = useState(2);
-    // console.log(state)
+
     return (
-        // <button onClick={() => setstate(state + 1)}>
-        //     Click me
-        // </button>
+
         <div className="bg-transparent">
             <Slider/>
             <div className="h-service">
